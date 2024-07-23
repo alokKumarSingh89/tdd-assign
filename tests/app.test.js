@@ -6,4 +6,5 @@ describe("Sum of number from given string", () => {
     const sum = add("");
     expect(sum).toBe(0);
   });
+  it("Return the number when string have 1 number", () => {});
 });
