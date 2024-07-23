@@ -15,4 +15,7 @@ describe("Sum of number from given string", () => {
     expect(sum).toBe(3);
     expect(add("1,2,3,4")).toBe(10);
   });
+  it("return the sum of number when they are comma and \n seperated", () => {
+    expect(add("1\n2,3,4")).toBe(10);
+  });
 });
