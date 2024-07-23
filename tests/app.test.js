@@ -21,4 +21,7 @@ describe("Sum of number from given string", () => {
   it("Sum of number when have diffrent delimiter", () => {
     expect(add("//;\n1;2")).toBe(3);
   });
+  it("throw the expection for negative number", () => {
+    expect(() => add("-1,2")).toThrowError(/^negative numbers not allowed -1$/);
+  });
 });
