@@ -23,5 +23,8 @@ describe("Sum of number from given string", () => {
   });
   it("throw the expection for negative number", () => {
     expect(() => add("-1,2")).toThrowError(/^negative numbers not allowed -1$/);
+    expect(() => add("-1,2,-3,-4")).toThrowError(
+      /^negative numbers not allowed -1,-3,-4$/
+    );
   });
 });
