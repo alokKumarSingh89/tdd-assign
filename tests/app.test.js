@@ -18,4 +18,7 @@ describe("Sum of number from given string", () => {
   it("return the sum of number when they are comma and \n seperated", () => {
     expect(add("1\n2,3,4")).toBe(10);
   });
+  it("Sum of number when have diffrent delimiter", () => {
+    expect(add("//;\n1;2")).toBe(3);
+  });
 });
